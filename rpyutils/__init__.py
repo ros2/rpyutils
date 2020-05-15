@@ -12,5 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from .add_dll_directories import add_dll_directories_from_env
+
+
 __all__ = [
+    'add_dll_directories_from_env',
 ]
