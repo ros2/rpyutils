@@ -12,7 +12,6 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
     ],
-    zip_safe=False,
     maintainer='Jacob Perron',
     maintainer_email='jacob@openrobotics.org',
     url='https://github.com/ros2/rpyutils',
