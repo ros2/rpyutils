@@ -14,6 +14,7 @@
 
 from contextlib import contextmanager
 import os
+import platform
 
 
 @contextmanager
@@ -39,9 +40,10 @@ def add_dll_directories_from_env(env_name: str):
     """
     dll_dir_handles = []
     # This function only makes sense on Windows and if the function 'add_dll_directory' exists
-    if os.name == 'nt' and hasattr(os, 'add_dll_directory'):
-        env_values = os.environ[env_name].split(';')
-        for prefix_path in env_values:
+    if platform.system() == 'Windows' and hasattr(os, 'add_dll_directory'):
+        env_value = os.environ.get(env_name)
+        path_list = env_value.split(os.pathsep) if env_value is not None else []
+        for prefix_path in path_list:
             # Only add directories that exist
             if os.path.isdir(prefix_path):
                 dll_dir_handles.append(os.add_dll_directory(prefix_path))
