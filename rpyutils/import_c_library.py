@@ -15,11 +15,22 @@
 import importlib
 import os
 from pathlib import Path
+from typing import Optional
 
 from rpyutils import add_dll_directories_from_env
 
 
-def import_c_library(name, package):
+def import_c_library(name: str, package: Optional[str] = None):
+    """
+    Import and return a C extension library using importlib, with consistent error messaging.
+
+    See importlib.import_module documentation for details on the parameters and return type.
+
+    :param name
+    :param package
+    :return The loaded module
+    :raises ImportError
+    """
     try:
         # Since Python 3.8, on Windows we should ensure DLL directories are
         # explicitly added to the search path.
