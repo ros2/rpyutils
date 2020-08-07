@@ -13,8 +13,10 @@
 # limitations under the License.
 
 from .add_dll_directories import add_dll_directories_from_env
+from .import_c_library import import_c_library
 
 
 __all__ = [
     'add_dll_directories_from_env',
+    'import_c_library',
 ]
