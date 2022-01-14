@@ -46,7 +46,7 @@ def add_dll_directories_from_env(env_name: str):
         for prefix_path in path_list:
             # Only add directories that exist
             if os.path.isdir(prefix_path):
-                dll_dir_handles.append(os.add_dll_directory(prefix_path))
+                dll_dir_handles.append(os.add_dll_directory(os.path.abspath(prefix_path)))
 
     try:
         yield dll_dir_handles
