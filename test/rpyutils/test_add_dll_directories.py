@@ -12,25 +12,41 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import sys
+
 from rpyutils import add_dll_directories_from_env
 
 
-def test_add_dll_direcotires_from_env(monkeypatch, tmp_path):
+def test_add_dll_directories_from_env(monkeypatch, tmp_path):
     # Test with empty value
     monkeypatch.delenv('TEST_ENV', raising=False)
-    with add_dll_directories_from_env('TEST_ENV'):
-        pass
+    with add_dll_directories_from_env('TEST_ENV') as dlls:
+        assert len(dlls) == 0
 
     # Test with one path
-    monkeypatch.setenv('TEST_ENV', tmp_path.name)
-    with add_dll_directories_from_env('TEST_ENV'):
-        pass
+    monkeypatch.setenv('TEST_ENV', str(tmp_path))
+    with add_dll_directories_from_env('TEST_ENV') as dlls:
+        if sys.platform == 'win32':
+            assert len(dlls) == 1
+        else:
+            assert len(dlls) == 0
 
     # Test with multiple paths
     dir1 = tmp_path / 'subdir1'
     dir2 = tmp_path / 'subdir2'
     dir1.mkdir()
     dir2.mkdir()
-    monkeypatch.setenv('TEST_ENV', f'{dir1.name};{dir2.name}')
-    with add_dll_directories_from_env('TEST_ENV'):
-        pass
+    monkeypatch.setenv('TEST_ENV', f'{dir1};{dir2}')
+    with add_dll_directories_from_env('TEST_ENV') as dlls:
+        if sys.platform == 'win32':
+            assert len(dlls) == 2
+        else:
+            assert len(dlls) == 0
+
+    # Test with '.' in env
+    monkeypatch.setenv('TEST_ENV', '.')
+    with add_dll_directories_from_env('TEST_ENV') as dlls:
+        if sys.platform == 'win32':
+            assert len(dlls) == 1
+        else:
+            assert len(dlls) == 0
