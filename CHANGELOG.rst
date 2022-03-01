@@ -2,6 +2,12 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Make sure to call abspath when adding Windows DLL directories. (`#8 <https://github.com/ros2/rpyutils/issues/8>`_)
+* Update troubleshooting links to docs.ros.org (`#6 <https://github.com/ros2/rpyutils/issues/6>`_)
+* Contributors: Chris Lalancette, Christophe Bedard
+
 0.2.0 (2020-09-11)
 ------------------
 * Create a shared function for importing c libraries (`#4 <https://github.com/ros2/rpyutils/issues/4>`_)
