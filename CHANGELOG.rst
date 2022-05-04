@@ -2,6 +2,9 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.0 (2022-05-04)
+------------------
+
 0.2.1 (2022-03-01)
 ------------------
 * Make sure to call abspath when adding Windows DLL directories. (`#8 <https://github.com/ros2/rpyutils/issues/8>`_)
