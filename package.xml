@@ -4,7 +4,7 @@
   <name>rpyutils</name>
   <version>0.3.0</version>
   <description>Package containing various utility types and functions for Python</description>
-  <maintainer email="jacob@openrobotics.org">Jacob Perron</maintainer>
+  <maintainer email="dharini@openrobotics.org">Dharini Dutia</maintainer>
   <license>Apache License 2.0</license>
 
   <author email="jacob@openrobotics.org">Jacob Perron</author>
