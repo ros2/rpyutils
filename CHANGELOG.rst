@@ -2,6 +2,12 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Mirror rolling to master
+* updating maintainer
+* Contributors: Audrow Nash, Dharini Dutia
+
 0.3.0 (2022-05-04)
 ------------------
 
