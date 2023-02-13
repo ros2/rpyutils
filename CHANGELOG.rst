@@ -2,6 +2,11 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* [rolling] Update maintainers - 2022-11-07 (`#10 <https://github.com/ros2/rpyutils/issues/10>`_)
+* Contributors: Audrow Nash
+
 0.3.1 (2022-09-13)
 ------------------
 * Mirror rolling to master
