@@ -2,6 +2,9 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.0 (2023-04-28)
+------------------
+
 0.3.2 (2023-02-13)
 ------------------
 * [rolling] Update maintainers - 2022-11-07 (`#10 <https://github.com/ros2/rpyutils/issues/10>`_)
