@@ -2,8 +2,8 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.1 (2023-08-21)
+------------------
 * correct the URL and f-strings format (`#11 <https://github.com/ros2/rpyutils/issues/11>`_)
 * Contributors: Chen Lihui
 
