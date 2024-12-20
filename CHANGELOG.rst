@@ -2,6 +2,12 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add Create py.typed (`#15 <https://github.com/ros2/rpyutils/issues/15>`_)
+* Remove CODEOWNERS and mirror-rolling-to-master workflow. (`#13 <https://github.com/ros2/rpyutils/issues/13>`_)
+* Contributors: Chris Lalancette, Michael Carlstrom
+
 0.6.0 (2024-10-03)
 ------------------
 * Add types and ament_mypy to rpyutils. (`#12 <https://github.com/ros2/rpyutils/issues/12>`_)
