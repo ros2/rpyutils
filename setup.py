@@ -12,6 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
     ],
+    package_data={'': ['py.typed']},
     maintainer='Dharini Dutia',
     maintainer_email='dharini@openrobotics.org',
     url='https://github.com/ros2/rpyutils',
