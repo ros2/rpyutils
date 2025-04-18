@@ -2,6 +2,11 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.2 (2025-04-18)
+------------------
+* Add py.typed to Package Data (`#16 <https://github.com/ros2/rpyutils/issues/16>`_)
+* Contributors: Michael Carlstrom
+
 0.6.1 (2024-12-20)
 ------------------
 * Add Create py.typed (`#15 <https://github.com/ros2/rpyutils/issues/15>`_)
