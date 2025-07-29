@@ -2,6 +2,11 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix setuptools deprecations (`#17 <https://github.com/ros2/rpyutils/issues/17>`_)
+* Contributors: mosfet80
+
 0.7.0 (2025-04-24)
 ------------------
 
