@@ -2,6 +2,18 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.2 (2025-09-17)
+------------------
+* fix setuptools deprecations (`#17 <https://github.com/ros2/rpyutils/issues/17>`_) (`#20 <https://github.com/ros2/rpyutils/issues/20>`_)
+  (cherry picked from commit bfd5a3411727ee902e3d3936c12ebba5545f483a)
+  Co-authored-by: mosfet80 <10235105+mosfet80@users.noreply.github.com>
+* Remove CODEOWNERS and mirror-rolling-to-master workflow. (`#13 <https://github.com/ros2/rpyutils/issues/13>`_) (`#14 <https://github.com/ros2/rpyutils/issues/14>`_)
+  They are both outdated and both no longer serving their
+  intended purpose.
+  (cherry picked from commit 824efd64f86b1a6d18d7429a4cd212f9c6594a7e)
+  Co-authored-by: Chris Lalancette <clalancette@gmail.com>
+* Contributors: mergify[bot]
+
 0.4.1 (2023-08-21)
 ------------------
 * correct the URL and f-strings format (`#11 <https://github.com/ros2/rpyutils/issues/11>`_)
