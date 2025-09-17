@@ -2,6 +2,11 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.2 (2025-09-17)
+------------------
+* fix setuptools deprecations (`#17 <https://github.com/ros2/rpyutils/issues/17>`_) (`#21 <https://github.com/ros2/rpyutils/issues/21>`_)
+* Contributors: mergify[bot]
+
 0.2.1 (2022-03-01)
 ------------------
 * Make sure to call abspath when adding Windows DLL directories. (`#8 <https://github.com/ros2/rpyutils/issues/8>`_)
