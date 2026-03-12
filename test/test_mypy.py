@@ -19,5 +19,5 @@ import pytest
 @pytest.mark.mypy
 @pytest.mark.linter
 def test_mypy() -> None:
-    rc = main(argv=[])
+    rc = main(argv=['--ament-strict'])
     assert rc == 0, 'Found type errors!'
