@@ -2,6 +2,11 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.2 (2026-04-09)
+------------------
+* Enforce ament_mypy --ament-strict (`#22 <https://github.com/ros2/rpyutils/issues/22>`_)
+* Contributors: Michael Carlstrom
+
 0.7.1 (2025-07-29)
 ------------------
 * fix setuptools deprecations (`#17 <https://github.com/ros2/rpyutils/issues/17>`_)
