@@ -2,6 +2,9 @@
 Changelog for package rpyutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.7.2 (2026-04-09)
 ------------------
 * Enforce ament_mypy --ament-strict (`#22 <https://github.com/ros2/rpyutils/issues/22>`_)
