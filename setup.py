@@ -27,7 +27,7 @@ setup(
     long_description=(
         'This package provides types and functions for common operations '
         'throughout the ROS 2 code base.'),
-    license='Apache License, Version 2.0',
+    license='Apache-2.0',
     extras_require={
         'test': [
             'pytest',
